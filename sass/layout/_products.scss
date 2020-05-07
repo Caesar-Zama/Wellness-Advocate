@@ -1,0 +1,24 @@
+.products {
+
+    h3 {margin: 23px auto 10px auto;}
+
+    p {
+        text-align: center;
+        // Landscape Mode
+        @media screen and (min-width: 568px) {
+            width: 80%;
+            margin: auto;
+        }
+
+        // Tablet Viewport
+        @media screen and (min-width: 768px) {max-width: 60%;}
+        // Desktop Viewport
+        @media screen and (min-width: 992px) {max-width: 38%;}
+    }
+
+    .btn {
+        margin: auto auto 41px auto;
+        // Desktop Viewport
+        @media screen and (min-width: 992px) {margin-bottom: 62px;}
+    }
+}

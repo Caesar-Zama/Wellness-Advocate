@@ -1,0 +1,17 @@
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    // Tablet Viewport
+    @media screen and (min-width: 700px) {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    // Desktop Viewport
+    @media screen and (min-width: 1100px) {
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+}
+

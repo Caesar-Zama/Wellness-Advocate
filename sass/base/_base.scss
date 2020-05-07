@@ -1,0 +1,78 @@
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 992px) {scroll-behavior: smooth;}
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: $font-weight--light;
+}
+
+  h1 {
+      margin-bottom: 14px;
+      font-size: 1.889rem;
+      font-weight: $font-weight--light;
+      line-height: 40px;
+      text-align: left;
+      color: $color-accent3;
+
+      @media screen and (min-width: 700px) {
+        width: auto;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        line-height: 68px;
+        text-align: left;
+      }
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    line-height: 160%;
+    text-align: center;
+    color: $color-secondary;
+    @media screen and (min-width: 768px) {font-size: 1.667rem;}
+  }
+
+  h4 {
+    margin: 10px auto;
+    font-size: 1.333rem;
+    font-weight: $font-weight--regular;
+    line-height: 160%;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      font-size: 1.667rem;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: $font-weight--light;
+    text-align: left;
+    color: $color-secondary;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-accent3;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }

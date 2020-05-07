@@ -1,0 +1,22 @@
+.btn {
+    margin-top: 32px;
+    padding: .556rem 1.11rem .556rem;
+    width: 185px;
+    border: none;
+    border-radius: 50px;
+    color: $color-primary;
+    background-color: $color-accent2;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.11rem;
+    font-weight: $font-weight--regular;
+    transition: 0.3s;
+    &:hover {background-color: $color-accent1;}
+}
+.btn-icon {
+    margin-top: 8px;
+    margin-right: 5px;
+}

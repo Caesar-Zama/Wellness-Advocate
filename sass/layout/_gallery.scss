@@ -1,0 +1,24 @@
+.gallery {
+    margin-top: 36px;
+
+    img {margin-bottom: 28px;}
+}
+
+// Tablet Viewport
+@media screen and (min-width: 700px) {
+    .products > .container h3 {margin: 60px auto 10px auto;}
+
+    .gallery {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            flex-basis: 48%;
+            // Break into 3-column at 768
+            @media screen and (min-width: 768px) {flex-basis: 32%;}
+        }
+    }
+}

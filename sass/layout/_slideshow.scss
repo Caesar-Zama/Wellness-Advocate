@@ -1,0 +1,109 @@
+:root {--swiper-theme-color: #fff;}
+
+// Positions slideshow progression btns
+.swiper-button-next,
+.swiper-button-prev {top: calc(22% - 1vh);}
+
+h2 {
+    margin: 0;
+    font-size: 1.667rem;
+    font-weight: $font-weight--regular;
+    line-height: 176%;
+}
+
+.slideshow-slide {
+    padding-bottom: 55px;
+    background: $color-secondary;
+    display: flex;
+    flex-direction: column;
+
+    &__content-inner {
+        padding: 10px 1.389rem 0 1.389rem; 
+        color: #fff;
+    }
+
+    &__subtitle {
+        margin: 30px 0 10px 0;
+        font-weight: $font-weight--regular;
+        text-align: left;
+    }
+    
+    &__copy {
+        font-weight: $font-weight--light;
+        text-align: left;
+        color: inherit;
+        opacity: .8;
+    }
+}
+
+// Mini-Tablet Viewports
+@media screen and (min-width: 700px) {
+
+    .slideshow-slide {
+        padding-bottom: 0;
+        flex-direction: row;
+
+        &__img {
+            flex-basis: 50%;
+            order: 1;
+
+            // img height fills container
+            img {height: 100%;}
+        }
+
+        &__content {
+            flex-basis: 50%;
+
+            &-inner {
+                margin-top: 2.22rem; 
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+        &__subtitle {font-size: 1.33rem;}
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {top: 88%;}
+
+    .swiper-button-next {right: 85vw;}
+    .swiper-button-prev {left: 5vw;}
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 1.333rem;
+        color: #fff;
+    }
+}
+
+// Tablet Viewports
+@media screen and (min-width:768px) {
+    .slideshow-slide__content-inner {margin-top: 4.44rem;}
+    .slideshow-slide__subtitle {margin-top: 80px;}
+}
+
+// Mini Tablet-Desktop Viewport
+@media screen and (min-width: 900px) {
+    .slideshow {max-height: 700px;}
+
+    .swiper-button-next,
+    .swiper-button-prev {top: 75%;}
+
+    .swiper-button-next {right: 88vw;}
+    .swiper-button-prev {left: 4vw;}
+}
+
+// Desktop Viewports
+@media screen and (min-width: 1100px) {
+    .slideshow-slide__content-inner {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {top: 65%;}
+
+    .swiper-button-next {right: calc(86% - -20px);}
+    .swiper-button-prev {left: calc(7% - 1vw);}
+}

@@ -1,0 +1,52 @@
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: $color-primary;
+
+    p {
+        margin-top: 30px;
+        font-weight: $font-weight--medium;
+        text-align: center;
+        color: inherit;
+    }
+}
+
+.moniker,
+.slogan {
+    font-size: .778rem;
+    text-align: center;
+    display: block;
+}
+
+.slogan {
+    margin-top: 16px;
+    
+    // Landscape Mode 
+    @media screen and (min-width: 568px) {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+// Tablet Viewport
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 2.11rem 0 2.44rem 0;
+        text-align: left;
+        p {text-align: inherit;}
+    }
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .moniker,
+    .slogan  {text-align: inherit;}
+
+    .slogan {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
