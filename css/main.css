@@ -754,15 +754,7 @@ h2 {
             justify-content: space-between;
   }
   .gallery img {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
-  }
-}
-
-@media screen and (min-width: 700px) and (min-width: 768px) {
-  .gallery img {
-    -ms-flex-preferred-size: 32%;
-        flex-basis: 32%;
+    width: 32%;
   }
 }
 
