@@ -15,16 +15,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        img {
-            flex-basis: 48%;
-            // // Break into 3-column at 768
-            // @media screen and (min-width: 768px) {flex-basis: 32%;}
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .gallery img {
-        flex-basis: 32%;
+        img {width: 32%;} // Break into 3-column at 700
     }
 }
